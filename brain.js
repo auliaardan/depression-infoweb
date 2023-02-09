@@ -1,15 +1,24 @@
 function displayRadioValue() {
-    document.getElementById("result").innerHTML = "";
-    var ele = document.getElementsByTagName('input');
+    let resultEl = document.getElementById("score-result");
+    let inputEl = document.getElementsByTagName('input');
+    let score = 0;
 
-    for (i = 0; i < ele.length; i++) {
+    for (i = 0; i < inputEl.length; i++) {
 
-        if (ele[i].type = "radio") {
-
-            if (ele[i].checked)
-                document.getElementById("result").innerHTML
-                    += ele[i].name + " Value: "
-                    + ele[i].value + "<br>";
+        if (inputEl[i].type = "radio") {
+            if (inputEl[i].checked)
+                score += parseInt(inputEl[i].value);
         }
     }
+    console.log(score)
+    if (score <= 4)
+        resultEl.innerHTML = "Tidak ada gejala depresi";
+    else if (score <= 9)
+        resultEl.innerHTML = "Gejala depresi ringan";
+    else if (score <= 14)
+        resultEl.innerHTML = "Depresi ringan";
+    else if (score <= 19)
+        resultEl.innerHTML = "Depresi sedang";
+    else if (score >= 20)
+        resultEl.innerHTML = "Depresi berat";
 }
