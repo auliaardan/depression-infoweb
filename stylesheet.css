@@ -110,6 +110,7 @@
 }
 
 .right-header{
+    flex: 50%;
 }
 
 .credits-mhs{
