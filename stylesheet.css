@@ -89,6 +89,31 @@
 
 
 .flx {
-    padding-top: 10px;
+    padding: 20px 15px 10px;
     display: flex;
+    background-image: url("header-bg.png");
+}
+
+.flx-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-speech{
+
+}
+
+.left-header{
+}
+
+.center-header{
+}
+
+.right-header{
+}
+
+.credits-mhs{
+    text-align: right;
+    border: 2px solid black;
+    padding: 2px 5px 0px 5px;
 }
