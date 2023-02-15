@@ -39,3 +39,4 @@ function displayRadioValue() {
             "Beberapa hal yang dapat Anda lakukan di rumah adalah:<br>\n" +
             "<ol><li>Sangat disarankan agar Anda bertemu dengan para ahli untuk mendapatkan pertolongan lebih lanjut. Tidak ada yang salah dengan meminta pertolongan.</li></ol>\n";
 }
+
