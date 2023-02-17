@@ -36,7 +36,6 @@
                 Sp.KJ(K)<br>Muhammad Alifian RP, Aulia R. Ardan, Elizabeth Divina</p>
         </div>
     </div>
-    <div class="blue-circle-child img-prettier" style="width: 750px; height: 750px"></div>
 </header>
 <div id="contentSection">
     <div class="flx blue-circle-parent">
@@ -63,8 +62,6 @@
                     <li>kualitas tidur terganggu</li>
                     <li>serta adanya gagasan untuk bunuh diri</li>
                 </ul>
-            </div>
-            <div class="blue-circle-child img-prettier">
             </div>
         </div>
     </div>
@@ -106,7 +103,7 @@
     </div>
     <h3>Dalam 2 minggu terakhir, seberapa sering Anda terganggu oleh masalah-masalah berikut? </h3>
     <div id="form-wrapper">
-        <form onsubmit="displayRadioValue()">
+        <form>
             <h1 class="form-title">Kurang berminat atau bergairah dalam melakukan apapun</h1>
             <div class="debt-amount-slider">
                 <input type="radio" class="btn-check" name="q1" id="option1" value="0" checked>
@@ -119,6 +116,7 @@
                 <label for="option4" data-debt-amount="Hampir setiap hari"></label>
                 <div class="debt-amount-pos"></div>
             </div>
+            <div class="border-bot"></div>
             <h1 class="form-title">Merasa murung, sedih, atau putus asa</h1>
             <div class="debt-amount-slider">
                 <input type="radio" class="btn-check" name="q2" id="option1b" value="0" checked>
@@ -131,7 +129,7 @@
                 <label for="option4b" data-debt-amount="Hampir setiap hari"></label>
                 <div class="debt-amount-pos"></div>
             </div>
-
+            <div class="border-bot"></div>
             <h1 class="form-title">Sulit tidur/mudah terbangun, atau terlalu banyak tidur</h1>
             <div class="debt-amount-slider">
                 <input type="radio" class="btn-check" name="q3" id="option1c" value="0" checked>
@@ -144,7 +142,7 @@
                 <label for="option4c" data-debt-amount="Hampir setiap hari"></label>
                 <div class="debt-amount-pos"></div>
             </div>
-
+            <div class="border-bot"></div>
             <h1 class="form-title">Merasa lelah atau kurang bertenaga</h1>
             <div class="debt-amount-slider">
                 <input type="radio" class="btn-check" name="q4" id="option1d" value="0" checked>
@@ -157,7 +155,7 @@
                 <label for="option4d" data-debt-amount="Hampir setiap hari"></label>
                 <div class="debt-amount-pos"></div>
             </div>
-
+            <div class="border-bot"></div>
             <h1 class="form-title">Kurang nafsu makan atau terlalu banyak makan</h1>
             <div class="debt-amount-slider">
                 <input type="radio" class="btn-check" name="q5" id="option1e" value="0" checked>
@@ -170,6 +168,7 @@
                 <label for="option4e" data-debt-amount="Hampir setiap hari"></label>
                 <div class="debt-amount-pos"></div>
             </div>
+            <div class="border-bot"></div>
             <h1 class="form-title">Kurang percaya diri — atau merasa bahwa Anda adalah orang yang gagal atau telah
                 mengecewakan diri sendiri atau
                 keluarga</h1>
@@ -184,7 +183,7 @@
                 <label for="option4f" data-debt-amount="Hampir setiap hari"></label>
                 <div class="debt-amount-pos"></div>
             </div>
-
+            <div class="border-bot"></div>
             <h1 class="form-title">Sulit berkonsentrasi pada sesuatu, misalnya membaca koran atau menonton televisi</h1>
             <div class="debt-amount-slider">
                 <input type="radio" class="btn-check" name="q7" id="option1g" value="0" checked>
@@ -197,6 +196,7 @@
                 <label for="option4g" data-debt-amount="Hampir setiap hari"></label>
                 <div class="debt-amount-pos"></div>
             </div>
+            <div class="border-bot"></div>
             <h1 class="form-title">Bergerak atau berbicara sangat lambat sehingga orang lain memperhatikannya. Atau
                 sebaliknya; merasa resah atau
                 gelisah sehingga Anda lebih sering bergerak dari biasanya</h1>
@@ -211,6 +211,7 @@
                 <label for="option4h" data-debt-amount="Hampir setiap hari"></label>
                 <div class="debt-amount-pos"></div>
             </div>
+            <div class="border-bot"></div>
             <h1 class="form-title">Merasa lebih baik mati atau ingin melukai diri sendiri dengan cara apapun</h1>
             <div class="debt-amount-slider">
                 <input type="radio" class="btn-check" name="q9" id="option1i" value="0" checked>
@@ -223,44 +224,42 @@
                 <label for="option4i" data-debt-amount="Hampir setiap hari"></label>
                 <div class="debt-amount-pos"></div>
             </div>
+            <div class="border-bot"></div>
         </form>
+        <div class="buttons-container">
+            <button class="button-arounder" type="submit" onclick="displayRadioValue()">
+                Cek Hasil
+            </button>
+        </div>
     </div>
+</div>
+<div class="bot-color">
+    <div id="resultSection">
+        <div id="score">
+            <p id="score-result"></p>
+        </div>
+    </div>
+    <div>
+        <h3>Hotline Bunuh Diri Indonesia</h3>
+        <p>Konseling psikologi SEJIWA untuk pertolongan pertama bunuh diri → 119 (ekstensi 8)</p>
+        <p>LISA Suicide Prevention Hotline</p>
+        <ol>
+            <li>Bahasa Indonesia: +62 811 3855 472</li>
+            <li>Bahasa Inggris: +62 811 3815 472</li>
+        </ol>
+        <h3>Layanan Kesehatan Jiwa</h3>
+        <ol>
+            <li>RSJ Amino Gondohutomo Semarang | (024) 6722565</li>
+            <li>RSJ Marzoeki Mahdi Bogor | (0251) 8324024, 8324025, 8320467</li>
+            <li>RSJ Soeharto Heerdjan Jakarta | (021) 5682841</li>
+            <li>RSJ Prof Dr Soerojo Magelang | (0293) 363601</li>
+            <li>RSJ Radjiman Wediodiningrat Malang | (0341) 423444</li>
+        </ol>
+    </div>
+</div>
 
-    <button type="button" onclick="displayRadioValue()">
-        Submit
-    </button>
-</div>
-<div id="resultSection">
-    <div id="score">
-        <p id="score-result"></p>
-    </div>
-</div>
-<div>
-    <h3>Hotline Bunuh Diri Indonesia</h3>
-    <p>Konseling psikologi SEJIWA untuk pertolongan pertama bunuh diri → 119 (ekstensi 8)</p>
-    <p>LISA Suicide Prevention Hotline</p>
-    <ol>
-        <li>Bahasa Indonesia: +62 811 3855 472</li>
-        <li>Bahasa Inggris: +62 811 3815 472</li>
-    </ol>
-    <h3>Layanan Kesehatan Jiwa</h3>
-    <ol>
-        <li>RSJ Amino Gondohutomo Semarang | (024) 6722565</li>
-        <li>RSJ Marzoeki Mahdi Bogor | (0251) 8324024, 8324025, 8320467</li>
-        <li>RSJ Soeharto Heerdjan Jakarta | (021) 5682841</li>
-        <li>RSJ Prof Dr Soerojo Magelang | (0293) 363601</li>
-        <li>RSJ Radjiman Wediodiningrat Malang | (0341) 423444</li>
-    </ol>
-</div>
-<footer>
+<footer class="bot-color">
     <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-        </ul>
         <p class="text-center text-muted">@
             <script>document.write(new Date().getFullYear())</script>
             Kelompok C

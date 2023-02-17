@@ -10,6 +10,7 @@ function displayRadioValue() {
                 score += parseInt(inputEl[i].value);
         }
     }
+
     if (score <= 4)
         resultEl.innerHTML = "Skor ≤ 4 <br>" +
             "Berdasarkan skoring, gejala anda belum termasuk depresi. Namun, nilai rendah bukan berarti Anda tidak berhak untuk mencari pertolongan. Bila Anda merasa butuh pertolongan, silahkan menghubungi ahli.";

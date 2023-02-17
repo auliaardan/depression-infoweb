@@ -21,7 +21,7 @@ form {
 
 form .form-title {
     margin-top: 2em;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -158,75 +158,56 @@ form:valid .debt-amount-slider input:checked + label::before {
     transition: all 0.15s linear;
 }
 
-form + button {
-    display: block;
-    position: relative;
-    margin: 56px auto 0;
-    padding: 10px 20px;
-    appearance: none;
-    transition: all 0.15s ease-in-out;
-    font-family: inherit;
-    font-size: 24px;
-    font-weight: 600;
-    background: #fff;
-    border: 2px solid #000;
-    border-radius: 8px;
-    outline: 0;
-    user-select: none;
-    cursor: pointer;
+.buttons-container {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-form + button:hover {
-    background: #000;
-    color: #fff;
+button {
+    background: white;
+    border: solid 2px black;
+    padding: .375em 1.125em;
+    font-size: 1rem;
 }
 
-form + button:hover:active {
-    transform: scale(0.9);
+.button-arounder {
+    font-size: 2rem;
+    background: hsl(190deg, 30%, 15%);
+    color: hsl(190deg, 10%, 95%);
+
+    box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, .2);
+    transfrom: translateY(0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    --dur: .15s;
+    --delay: .15s;
+    --radius: 16px;
+
+    transition: border-top-left-radius var(--dur) var(--delay) ease-out,
+    border-top-right-radius var(--dur) calc(var(--delay) * 2) ease-out,
+    border-bottom-right-radius var(--dur) calc(var(--delay) * 3) ease-out,
+    border-bottom-left-radius var(--dur) calc(var(--delay) * 4) ease-out,
+    box-shadow calc(var(--dur) * 4) ease-out,
+    transform calc(var(--dur) * 4) ease-out,
+    background calc(var(--dur) * 4) steps(4, jump-end);
 }
 
-form + button:focus {
-    background: #4caf50;
-    border-color: #4caf50;
-    color: #fff;
-    pointer-events: none;
+.button-arounder:hover,
+.button-arounder:focus {
+    box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, .2);
+    transform: translateY(-4px);
+    background: hsl(230deg, 50%, 45%);
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
 }
-
-form + button:focus::before {
-    animation: spin 1s linear infinite;
-}
-
-form + button::before {
-    display: inline-block;
-    width: 0;
-    opacity: 0;
-    content: "\f3f4";
-    font-family: "Font Awesome 5 Pro";
-    font-weight: 900;
-    margin-right: 0;
-    transform: rotate(0deg);
-}
-
-form:invalid + button {
-    pointer-events: none;
-    opacity: 0.25;
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-        width: 24px;
-        opacity: 1;
-        margin-right: 12px;
-    }
-    to {
-        transform: rotate(360deg);
-        width: 24px;
-        opacity: 1;
-        margin-right: 12px;
-    }
-}
-
 
 .speech-box {
     height: 25vh;
@@ -333,13 +314,22 @@ form:invalid + button {
     bottom: -24px;
 }
 
+.border-bot {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5em;
+    border-bottom: 2px solid black;
+}
+
 body {
-    background-color: #D8ECEF;
     overflow-x: hidden;
 }
 
 header {
     border-bottom: 1px solid black;
+    background: linear-gradient(#a5e0e7, #D8ECEF);
+    background: rgb(165, 224, 231);
+    background: linear-gradient(132deg, rgba(165, 224, 231, 1) 0%, rgb(111, 100, 185) 75%);
 }
 
 .first-content {
@@ -368,11 +358,6 @@ header {
     position: relative;
 }
 
-.blue-circle-child {
-    position: absolute;
-    z-index: -1;
-}
-
 .sad-alif-img {
     width: 30%;
 }
@@ -384,10 +369,6 @@ header {
     z-index: -1;
 }
 
-header > .blue-circle-child {
-    left: 60%;
-    top: -40%;
-}
 
 .credits-mhs {
     text-align: right;
@@ -405,8 +386,13 @@ header > .blue-circle-child {
     border-radius: 30%;
 }
 
+#contentSection {
+    background-color: #D8ECEF;
+}
+
 .second-content {
     margin: 0 25px;
+    z-index: 0;
 }
 
 .q-sign-img {
@@ -439,6 +425,10 @@ header > .blue-circle-child {
 }
 
 .questionnaire {
+    background: linear-gradient(#D8ECEF, #8f8cde, #b3a6ff);
+}
 
+.bot-color {
+    background-color: #b3a6ff;
 }
 
