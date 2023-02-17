@@ -10,7 +10,6 @@ function displayRadioValue() {
                 score += parseInt(inputEl[i].value);
         }
     }
-    console.log(score)
     if (score <= 4)
         resultEl.innerHTML = "Skor ≤ 4 <br>" +
             "Berdasarkan skoring, gejala anda belum termasuk depresi. Namun, nilai rendah bukan berarti Anda tidak berhak untuk mencari pertolongan. Bila Anda merasa butuh pertolongan, silahkan menghubungi ahli.";
@@ -38,5 +37,6 @@ function displayRadioValue() {
             "Gejala depresi Anda sudah menyebabkan susah tidur, kehilangan nafsu makan, dan susah berkonsentrasi. Anda memiliki pandangan pesimistik mengenai masa depan, bahkan ingin bunuh diri.<br>\n" +
             "Beberapa hal yang dapat Anda lakukan di rumah adalah:<br>\n" +
             "<ol><li>Sangat disarankan agar Anda bertemu dengan para ahli untuk mendapatkan pertolongan lebih lanjut. Tidak ada yang salah dengan meminta pertolongan.</li></ol>\n";
+    return false;
 }
 

@@ -40,7 +40,9 @@
 </header>
 <div id="contentSection">
     <div class="flx blue-circle-parent">
-        <img class="img-prettier" src="sad-alif.png" width="30%">
+        <div class="sad-alif-img">
+            <img class="img-prettier" src="sad-alif.png" width=100%>
+        </div>
         <div class="flx-col first-content">
             <div class="bubble bubble-bottom-left"><h1><b>Apa itu Depresi?</b></h1>
             </div>
@@ -81,27 +83,44 @@
         <div class="sneaky-box"></div>
         <img class='img-prettier headache' src="pusying.png">
     </div>
-    <h2>Mengapa PHQ-9?</h2>
-    <p>Patient Health Questionnaire-9 adalah kuesioner yang dapat diisi oleh pasien sendiri dengan mengenali serta
-        mengukur keparahan sembilan gejala depresi berdasarkan DSM-V. Tingkat penilaian untuk setiap item adalah 0
-        (sama
-        sekali tidak ada) hingga 3 (terjadi hampir setiap hari). Meski diisi oleh pasien sendiri, kuesioner ini
-        memiliki
-        sensitivitas dan spesifisitas yang cukup tinggi, yaitu 88%*<br>
-        *untuk skor PHQ–9 ≥10
-    </p>
 </div>
-<div id="questionnaire">
+<div class="questionnaire">
+    <div class="flx-col">
+        <img class="q-sign-img" src="q-sign.png">
+        <div class="q-desc">
+            <p><b>Patient Health Questionnaire-9</b> adalah kuesioner yang dapat diisi oleh pasien sendiri dengan
+                mengenali
+                serta
+                mengukur keparahan sembilan gejala depresi berdasarkan DSM-V. Tingkat penilaian untuk setiap item adalah
+                0
+                (sama
+                sekali tidak ada) hingga 3 (terjadi hampir setiap hari).
+            </p>
+        </div>
+        <div class="sub-q-desc">
+            <p>Meski diisi oleh pasien sendiri, kuesioner ini
+                memiliki
+                sensitivitas dan spesifisitas yang cukup tinggi, yaitu 88%
+                (untuk skor PHQ–9 ≥10)</p>
+        </div>
+    </div>
     <h3>Dalam 2 minggu terakhir, seberapa sering Anda terganggu oleh masalah-masalah berikut? </h3>
-    <p>Kurang berminat atau bergairah dalam melakukan apapun</p>
-    <input type="radio" class="btn-check" name="q1" id="option1" value="0" checked>
-    <label class="btn btn-secondary" for="option1">Tidak Pernah</label>
-    <input type="radio" class="btn-check" name="q1" id="option2" value="1">
-    <label class="btn btn-secondary" for="option2">Beberapa hari</label>
-    <input type="radio" class="btn-check" name="q1" id="option3" value="2">
-    <label class="btn btn-secondary" for="option3">Lebih dari separuh waktu yang dimaksud</label>
-    <input type="radio" class="btn-check" name="q1" id="option4" value="3">
-    <label class="btn btn-secondary" for="option4">Hampir setiap hari</label>
+    <div id="form-wrapper">
+        <form onsubmit="displayRadioValue()">
+            <h1 class="form-title">Kurang berminat atau bergairah dalam melakukan apapun</h1>
+            <div class="debt-amount-slider">
+                <input type="radio" class="btn-check" name="q1" id="option1" value="0" checked>
+                <label for="option1" data-debt-amount="Tidak Pernah"></label>
+                <input type="radio" class="btn-check" name="q1" id="option2" value="1">
+                <label for="option2" data-debt-amount="Beberapa hari"></label>
+                <input type="radio" class="btn-check" name="q1" id="option3" value="2">
+                <label for="option3" data-debt-amount="Lebih dari separuh waktu yang dimaksud"></label>
+                <input type="radio" class="btn-check" name="q1" id="option4" value="3">
+                <label for="option4" data-debt-amount="Hampir setiap hari"></label>
+                <div class="debt-amount-pos"></div>
+            </div>
+        </form>
+    </div>
 
     <br>
 
