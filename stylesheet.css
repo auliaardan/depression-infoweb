@@ -20,7 +20,7 @@ form {
 }
 
 form .form-title {
-    margin-top: 0;
+    margin-top: 2em;
     font-size: 2em;
     text-align: center;
 }
@@ -439,8 +439,6 @@ header > .blue-circle-child {
 }
 
 .questionnaire {
-    background-image: url("q-bg.png");
-    background-position: center;
-    background-size: 150%;
+
 }
 
