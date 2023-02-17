@@ -327,7 +327,7 @@ body {
     background: linear-gradient(132deg, rgba(165, 224, 231, 1) 0%, rgb(111, 100, 185) 75%);
 }
 
-.yuk-inget{
+.yuk-inget {
     width: 35%;
 }
 
@@ -357,7 +357,11 @@ header {
 }
 
 .right-header {
+    display: flex;
     flex: 50%;
+    height: 300px;
+    align-items: flex-end !important;
+    flex-direction: column !important;
 }
 
 .blue-circle-parent {
@@ -501,11 +505,11 @@ header {
         margin: 0 auto;
     }
 
-    .first-content{
+    .first-content {
         margin: 5px 5px;
     }
 
-    .bubble{
+    .bubble {
         width: 100%;
     }
 
@@ -513,16 +517,52 @@ header {
         width: 75%;
     }
 
-    .second-content{
+    .second-content {
         margin: 0 0;
     }
 
-    .sneaky-box{
+    .sneaky-box {
         display: none;
     }
 
-    .headache{
+    .headache {
         position: static;
         z-index: auto;
+    }
+
+    .q-sign-img {
+        width: 80%;
+    }
+
+    .q-desc {
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    .sub-q-desc {
+        font-size: 0.7em;
+        margin: 10px 5% 0px;
+    }
+
+    .phq-9-legend {
+        width: 90%;
+        font-size: 0.8em;
+        font-weight: 300 !important;
+    }
+
+    form .form-title {
+        font-size: 1.2em;
+    }
+
+    form .debt-amount-slider label::before {
+        font-size: 10px;
+    }
+
+    .fkui{
+        margin: 5px auto;
+    }
+    .layanan-container{
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
