@@ -323,7 +323,12 @@ button {
 
 body {
     overflow-x: hidden;
-    background: #b3a6ff;
+    background: rgb(165, 224, 231);
+    background: linear-gradient(132deg, rgba(165, 224, 231, 1) 0%, rgb(111, 100, 185) 75%);
+}
+
+.yuk-inget{
+    width: 35%;
 }
 
 header {
@@ -378,7 +383,7 @@ header {
 }
 
 .sneaky-box {
-    width: 35%;
+    width: 40%;
     height: 350px;
 }
 
@@ -448,12 +453,12 @@ header {
     margin: 0 auto;
 }
 
-.layanan-container{
+.layanan-container {
     width: 50%;
     text-align: center;
 }
 
-.layanan-content{
+.layanan-content {
     padding: 15px 25px;
     background: white;
     border-radius: 15px;
@@ -461,19 +466,63 @@ header {
     width: 90%;
 }
 
-.alif-reka-img{
+.alif-reka-img {
     width: 75%;
     margin: 0 auto;
 }
 
-.hotline{
+.hotline {
     width: 50%;
     margin: 0 auto;
 }
 
-.hotline-container{
+.hotline-container {
     text-align: center;
     margin-top: 15px;
     margin-left: 15px;
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 670px) {
+    .flx {
+        flex-direction: column;
+    }
+
+    .left-header {
+        margin: 0 auto;
+    }
+
+    .yuk {
+        text-align: center;
+    }
+
+    .sad-alif-img {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .first-content{
+        margin: 5px 5px;
+    }
+
+    .bubble{
+        width: 100%;
+    }
+
+    .yuk-inget {
+        width: 75%;
+    }
+
+    .second-content{
+        margin: 0 0;
+    }
+
+    .sneaky-box{
+        display: none;
+    }
+
+    .headache{
+        position: static;
+        z-index: auto;
+    }
 }
