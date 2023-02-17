@@ -487,6 +487,12 @@ header {
     margin-bottom: 15px;
 }
 
+.referensi{
+    margin: 10px 0;
+    font-size: 0.5em;
+    text-align: left;
+}
+
 @media screen and (max-width: 670px) {
     .flx {
         flex-direction: column;
@@ -564,5 +570,9 @@ header {
     .layanan-container{
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .credits-mhs{
+        text-align: center;
     }
 }
