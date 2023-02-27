@@ -293,7 +293,7 @@ button {
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 24px;
-    width: 400px;
+    width: 630px;
     background: #c7d3c0;
     border-radius: 40px;
     padding: 24px;
@@ -487,7 +487,7 @@ header {
     margin-bottom: 15px;
 }
 
-.referensi{
+.referensi {
     margin: 10px 0;
     font-size: 0.5em;
     text-align: left;
@@ -560,19 +560,22 @@ header {
         font-size: 1.2em;
     }
 
+
+
     form .debt-amount-slider label::before {
         font-size: 10px;
     }
 
-    .fkui{
+    .fkui {
         margin: 5px auto;
     }
-    .layanan-container{
+
+    .layanan-container {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    .credits-mhs{
+    .credits-mhs {
         text-align: center;
     }
 }

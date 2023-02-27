@@ -12,10 +12,10 @@ function displayRadioValue() {
     }
 
     if (score <= 4)
-        resultEl.innerHTML = "Skor ≤ 4 <br>" +
+        resultEl.innerHTML = "<b>Skor ≤ 4</b><br>" +
             "Berdasarkan skoring, gejala anda belum termasuk depresi. Namun, nilai rendah bukan berarti Anda tidak berhak untuk mencari pertolongan. Bila Anda merasa butuh pertolongan, silahkan menghubungi ahli.";
     else if (score <= 9)
-        resultEl.innerHTML = "Skor 5-9 <br>\n" +
+        resultEl.innerHTML = "<b>Skor 5-9</b><br>\n" +
             "Gejala depresi ringan. \n" +
             "Belakangan Anda merasa sedih terus-menerus, kehilangan motivasi, juga energi. Mungkin Anda juga menjadi susah tidur, kehilangan nafsu makan, dan susah berkonsentrasi.\n" +
             "Beberapa hal yang dapat Anda lakukan di rumah adalah:<br><ol>\n" +
@@ -25,7 +25,7 @@ function displayRadioValue() {
             "</ol>";
     else if (score <= 19)
         resultEl.innerHTML =
-            "Gejala depresi sedang (10-14) dan sedang-berat (15-19) <br>\n" +
+            "<b>Gejala depresi sedang (10-14) dan sedang-berat (15-19)</b><br>\n" +
             "Gejala depresi Anda sudah menyebabkan susah tidur, kehilangan nafsu makan, dan susah berkonsentrasi. Anda memiliki pandangan pesimistik mengenai masa depan.\n" +
             "Beberapa hal yang dapat Anda lakukan di rumah adalah:<br><ol>" +
             "<li>Terapi relaksasi → terapi ini dapat dilakukan sendiri di rumah dengan Anda berlatih bernapas atau bermeditasi.</li>" +
@@ -33,7 +33,7 @@ function displayRadioValue() {
             "<li>Mungkin sudah saatnya mempertimbangkan bertemu dengan para ahli. Tidak ada yang salah dengan meminta pertolongan.</li>" +
             "</ol>\n"
     else if (score >= 20)
-        resultEl.innerHTML = "Skor 20-27<br>\n" +
+        resultEl.innerHTML = "<b>Skor 20-27</b><br>\n" +
             "Gejala depresi berat.\n" +
             "Gejala depresi Anda sudah menyebabkan susah tidur, kehilangan nafsu makan, dan susah berkonsentrasi. Anda memiliki pandangan pesimistik mengenai masa depan, bahkan ingin bunuh diri.<br>\n" +
             "Beberapa hal yang dapat Anda lakukan di rumah adalah:<br>\n" +
