@@ -1,10 +1,28 @@
 :root {
-    --color-blue: #83af9b;
-    --color-green: #c8c8a9;
-    --color-brown: #774f38;
-    --color-beige: #d7ebee;
-    --color-yellow: #f9cdad;
-    --color-pink: #fe4365;
+    --color-blue: #7ea6c5;
+    --color-green: #cfd9c4;
+    --color-brown: #5b4b3a;
+    --color-beige: #f5f7f8;
+    --color-yellow: #f2d5c4;
+    --color-pink: #d76a7f;
+    --color-ink: #2f3e4d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    overflow-x: hidden;
+    background: #f3f5f7;
+    color: var(--color-ink);
+    font-family: "Baloo 2", cursive;
 }
 
 #form-wrapper {
@@ -225,11 +243,11 @@ button {
     letter-spacing: 2px;
     font-size: 15px;
     color: var(--color-brown);
-    background-color: #d7ebee;
-    padding: 30px;
-    border-radius: 11px;
+    background-color: var(--color-beige);
+    padding: 28px;
+    border-radius: 16px;
     position: relative;
-    box-shadow: 20px 20px var(--color-blue);
+    box-shadow: 18px 18px rgba(126, 166, 197, 0.4);
     font-family: "Baloo 2", cursive;
     border: 1px solid var(--color-green);
 }
@@ -248,13 +266,13 @@ button {
     width: 55px;
     height: 11px;
     line-height: 30px;
-    border-radius: 11px;
-    background-color: var(--color-beige);
+    border-radius: 14px;
+    background-color: #ffffff;
     position: absolute;
     display: block;
     bottom: -30px;
     left: 0;
-    box-shadow: 22px 22px var(--color-blue);
+    box-shadow: 18px 18px rgba(126, 166, 197, 0.4);
     z-index: -2;
 }
 
@@ -293,9 +311,9 @@ button {
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 24px;
-    width: 630px;
-    background: #c7d3c0;
-    border-radius: 40px;
+    width: min(630px, 100%);
+    background: #eef3f1;
+    border-radius: 32px;
     padding: 24px;
     text-align: center;
     color: #000;
@@ -318,13 +336,7 @@ button {
     width: 50%;
     margin: 0 auto;
     margin-top: 5em;
-    border-bottom: 2px solid black;
-}
-
-body {
-    overflow-x: hidden;
-    background: rgb(165, 224, 231);
-    background: linear-gradient(132deg, rgba(165, 224, 231, 1) 0%, rgb(111, 100, 185) 75%);
+    border-bottom: 2px solid #2f3e4d;
 }
 
 .yuk-inget {
@@ -332,10 +344,15 @@ body {
 }
 
 header {
-    border-bottom: 1px solid black;
-    background: linear-gradient(#a5e0e7, #D8ECEF);
-    background: rgb(165, 224, 231);
-    background: linear-gradient(132deg, rgba(165, 224, 231, 1) 0%, rgb(111, 100, 185) 75%);
+    border-bottom: 1px solid #d6dde5;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(47, 62, 77, 0.08);
+}
+
+header.flx {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .first-content {
@@ -345,6 +362,22 @@ header {
 .flx {
     padding: 20px 15px 10px;
     display: flex;
+    gap: 24px;
+}
+
+.left-header,
+.center-header,
+.right-header {
+    flex: 1 1 0;
+}
+
+.left-header img {
+    width: min(260px, 100%);
+    margin: 0 auto;
+}
+
+.fkui {
+    width: min(220px, 100%);
 }
 
 .flx-col {
@@ -359,9 +392,9 @@ header {
 .right-header {
     display: flex;
     flex: 50%;
-    height: 300px;
     align-items: flex-end !important;
     flex-direction: column !important;
+    gap: 12px;
 }
 
 .blue-circle-parent {
@@ -369,40 +402,41 @@ header {
 }
 
 .sad-alif-img {
-    width: 30%;
+    width: min(30%, 320px);
+    align-self: center;
 }
 
 .headache {
-    position: absolute;
-    left: 63%;
-    top: -30%;
-    z-index: -1;
+    position: relative;
+    max-width: 280px;
+    align-self: center;
+    margin-left: auto;
 }
 
 
 .credits-mhs {
     text-align: right;
-    border: 2px solid black;
-    padding: 2px 5px 0px 5px;
-}
-
-.sneaky-box {
-    width: 40%;
-    height: 350px;
+    border: 1px solid #d6dde5;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: #f9fafb;
 }
 
 .img-prettier {
-    background: radial-gradient(closest-side, #5a4bb9, #8f8cde, #d7ebee);
-    border-radius: 30%;
+    background: radial-gradient(closest-side, #b7c8e3, #dbe6f5, #f5f7f8);
+    border-radius: 24%;
+    padding: 8px;
 }
 
 #contentSection {
-    background-color: #D8ECEF;
+    background-color: #f1f4f7;
 }
 
 .second-content {
     margin: 0 25px;
     z-index: 0;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .q-sign-img {
@@ -419,8 +453,8 @@ header {
     font-size: 1.2em;
     text-align: center;
     background: white;
-    border-radius: 15px;
-    box-shadow: #c6d2bf 15px 15px;
+    border-radius: 20px;
+    box-shadow: 12px 12px 24px rgba(47, 62, 77, 0.12);
 }
 
 .phq-9-legend {
@@ -430,7 +464,8 @@ header {
     margin: 15px auto;
     width: 50%;
     background: white;
-    border-radius: 15px;
+    border-radius: 16px;
+    box-shadow: 10px 10px 20px rgba(47, 62, 77, 0.08);
 }
 
 .q-desc {
@@ -445,11 +480,11 @@ header {
 }
 
 .questionnaire {
-    background: linear-gradient(#D8ECEF, #8f8cde, #b3a6ff);
+    background: linear-gradient(#f1f4f7, #e3e8ef);
 }
 
 .bot-color {
-    background: linear-gradient(#b3a6ff, #D8ECEF);
+    background: #f5f7f9;
 }
 
 .alif-hug-img {
@@ -465,9 +500,10 @@ header {
 .layanan-content {
     padding: 15px 25px;
     background: white;
-    border-radius: 15px;
+    border-radius: 18px;
     margin: 0 auto;
     width: 90%;
+    box-shadow: 10px 10px 20px rgba(47, 62, 77, 0.08);
 }
 
 .alif-reka-img {
@@ -485,6 +521,10 @@ header {
     margin-top: 15px;
     margin-left: 15px;
     margin-bottom: 15px;
+    padding: 16px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 10px 10px 20px rgba(47, 62, 77, 0.08);
 }
 
 .referensi {
@@ -496,6 +536,7 @@ header {
 @media screen and (max-width: 670px) {
     .flx {
         flex-direction: column;
+        align-items: center;
     }
 
     .left-header {
@@ -527,13 +568,10 @@ header {
         margin: 0 0;
     }
 
-    .sneaky-box {
-        display: none;
-    }
-
     .headache {
         position: static;
         z-index: auto;
+        margin: 0 auto;
     }
 
     .q-sign-img {
@@ -577,5 +615,9 @@ header {
 
     .credits-mhs {
         text-align: center;
+    }
+
+    .right-header {
+        align-items: center !important;
     }
 }
